@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROXIC® | Official Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="intro" id="intro" role="dialog" aria-label="Welcome to ROXIC">
+    <div class="intro-inner">
+      <h1 class="intro-title">ROXIC</h1>
+      <p class="intro-subtitle">ROXIC YOUR WAY</p>
+      <button type="button" class="intro-enter" id="intro-enter">ENTER</button>
+    </div>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">ROXIC</a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop all</a></li>
+          <li><a href="#track">Track Order</a></li>
+          <li><a href="#about">About us</a></li>
+          <li class="has-dropdown">
+            <button type="button" aria-expanded="false" aria-controls="policies-menu">Policies</button>
+            <ul id="policies-menu" class="dropdown" hidden>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#refund">Refund Policy</a></li>
+              <li><a href="#shipping">Shipping Policy</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="country-select">
+          <button type="button" class="country-btn" aria-label="Country and currency">United States <span>USD $</span></button>
+        </div>
+        <a href="#login" class="action-link">Login</a>
+        <button type="button" class="action-link icon-btn" aria-label="Search">Search</button>
+        <button type="button" class="action-link cart-btn" aria-label="Cart">
+          Cart
+          <span class="cart-count" data-count="0">0</span>
+        </button>
+      </div>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" aria-hidden="true">
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop all</a></li>
+          <li><a href="#track">Track Order</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#refund">Refund Policy</a></li>
+          <li><a href="#shipping">Shipping Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-figure">
+        <img src="hero-figure.png" alt="" />
+      </div>
+      <p class="hero-tagline">ROXIC YOUR WAY</p>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <h2 class="section-title">SHOP THE LATEST...</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <div class="placeholder-img burnout"></div>
+            <span class="product-badge">Choose options</span>
+          </div>
+          <h3 class="product-name">"BURNOUT" HIDDEN SINS HOODIE</h3>
+          <p class="product-price">Sale price <strong>$126.00</strong></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <div class="placeholder-img burnout"></div>
+            <span class="product-badge">Choose options</span>
+          </div>
+          <h3 class="product-name">"BURNOUT" HIDDEN SINS SWEATS</h3>
+          <p class="product-price">Sale price <strong>$119.00</strong></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <div class="placeholder-img cement"></div>
+            <span class="product-badge">Choose options</span>
+          </div>
+          <h3 class="product-name">"RAW CEMENT" HIDDEN SINS HOODIE</h3>
+          <p class="product-price">Sale price <strong>$126.00</strong></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <div class="placeholder-img cement"></div>
+            <span class="product-badge">Choose options</span>
+          </div>
+          <h3 class="product-name">"RAW CEMENT" HIDDEN SINS SWEATS</h3>
+          <p class="product-price">Sale price <strong>$119.00</strong></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card sale">
+          <div class="product-image">
+            <div class="placeholder-img leopard"></div>
+            <span class="product-badge">Choose options</span>
+            <span class="save-badge">Save $49.00</span>
+          </div>
+          <h3 class="product-name">"CEMENT" LEOPARD HOODIE</h3>
+          <p class="product-price">Sale price <strong>$112.00</strong> <s>Regular price $161.00</s></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card sale">
+          <div class="product-image">
+            <div class="placeholder-img leopard"></div>
+            <span class="product-badge">Choose options</span>
+            <span class="save-badge">Save $49.00</span>
+          </div>
+          <h3 class="product-name">"CEMENT" LEOPARD SWEATS</h3>
+          <p class="product-price">Sale price <strong>$105.00</strong> <s>Regular price $154.00</s></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card sale">
+          <div class="product-image">
+            <div class="placeholder-img snow"></div>
+            <span class="product-badge">Choose options</span>
+            <span class="save-badge">Save $49.00</span>
+          </div>
+          <h3 class="product-name">"SNOW" LEOPARD HOODIE</h3>
+          <p class="product-price">Sale price <strong>$112.00</strong> <s>Regular price $161.00</s></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+        <article class="product-card sale">
+          <div class="product-image">
+            <div class="placeholder-img snow"></div>
+            <span class="product-badge">Choose options</span>
+            <span class="save-badge">Save $49.00</span>
+          </div>
+          <h3 class="product-name">"SNOW" LEOPARD SWEATS</h3>
+          <p class="product-price">Sale price <strong>$105.00</strong> <s>Regular price $154.00</s></p>
+          <button type="button" class="btn-add">Choose options</button>
+        </article>
+      </div>
+      <div class="shop-cta">
+        <a href="#shop-all" class="btn-primary">SHOP ALL</a>
+        <a href="#shop-now" class="btn-primary outline">SHOP NOW</a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="section-title">Customer Reviews</h2>
+      <p class="reviews-meta">Based on 3,250 reviews</p>
+      <div class="reviews-grid">
+        <blockquote class="review-card">
+          <p class="review-text">the quality is unmatched. Worth the wait.</p>
+          <footer>
+            <cite>Sarah Joan</cite>
+            <span>New York, NY</span>
+            <time>2 days ago</time>
+          </footer>
+        </blockquote>
+        <blockquote class="review-card">
+          <p class="review-text">Definitely worth the wait. Quality goes crazy.</p>
+          <footer>
+            <cite>Unregistered Customer</cite>
+            <span>Chicago, IL</span>
+            <time>14 days ago</time>
+          </footer>
+        </blockquote>
+        <blockquote class="review-card">
+          <p class="review-text">Real quality takes time. Got what I paid for and more.</p>
+          <footer>
+            <cite>Mo Gohari</cite>
+            <span>Toronto, ON</span>
+            <time>6 days ago</time>
+          </footer>
+        </blockquote>
+        <blockquote class="review-card">
+          <p class="review-text">Best purchase I've made this year. The quality is outstanding.</p>
+          <footer>
+            <cite>Meo</cite>
+            <span>Milton, ON</span>
+            <time>19 days ago</time>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="about-title">what is roxic?</h2>
+      <div class="about-content">
+        <p>ROXIC was born in Alexandria, Virginia with nothing but grind and vision. No shortcuts, no handouts — just real work that shows in every drop we put out there.</p>
+        <p>The slogan <strong>"ROXIC YOUR WAY."</strong> Speaks for itself: anyone can copy the garms or designs, but they could never copy the story, the community, the grind, or what makes us original. To everyone rocking with us — you're the reason we keep building. Welcome to ROXIC. Love.</p>
+        <p><strong>To contact us, email:</strong> <a href="mailto:support@roxic.info">support@roxic.info</a></p>
+        <p><strong>Hours of operation:</strong> we do more than graveyard shifts.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-nav">
+        <a href="#contact">Contact Us</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#refund">Refund Policy</a>
+      </div>
+      <div class="country-select footer-country">
+        <button type="button" class="country-btn">United States <span>USD $</span></button>
+      </div>
+      <p class="copyright">© 2026 - ROXIC</p>
+      <div class="payment-methods">
+        <span>American Express</span>
+        <span>Apple Pay</span>
+        <span>Bancontact</span>
+        <span>Diners Club</span>
+        <span>Discover</span>
+        <span>Google Pay</span>
+        <span>iDEAL</span>
+        <span>Mastercard</span>
+        <span>Shop Pay</span>
+        <span>Visa</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer-inner">
+      <div class="cart-header">
+        <h2>Cart</h2>
+        <button type="button" class="cart-close" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-empty">
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
