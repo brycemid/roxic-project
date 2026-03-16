@@ -25,25 +25,70 @@
         "button_link": ""
       }
     },
-    "reviews": {
-      "type": "reviews",
-      "settings": {
-        "heading": "Customer Reviews",
-        "subheading": "Based on 3,250 reviews"
-      }
-    },
     "about": {
       "type": "about",
       "settings": {
         "heading": "what is roxic?",
         "body": "<p>ROXIC was born in Alexandria, Virginia with nothing but grind and vision. No shortcuts, no handouts — just real work that shows in every drop we put out there.</p><p>The slogan <strong>\"ROXIC YOUR WAY.\"</strong> Speaks for itself: anyone can copy the garms or designs, but they could never copy the story, the community, the grind, or what makes us original. To everyone rocking with us — you're the reason we keep building. Welcome to ROXIC. Love.</p><p><strong>To contact us, email:</strong> <a href='mailto:support@roxic.info'>support@roxic.info</a></p><p><strong>Hours of operation:</strong> we do more than graveyard shifts.</p>"
       }
+    },
+    "reviews_VhiXaM": {
+      "type": "reviews",
+      "blocks": {
+        "review_VBxCcc": {
+          "type": "review",
+          "settings": {
+            "quote": "the quality is unmatched. Worth the wait.",
+            "author": "Sarah Joan",
+            "location": "New York, NY",
+            "time": "2 days ago"
+          }
+        },
+        "review_xBxfry": {
+          "type": "review",
+          "settings": {
+            "quote": "Definitely worth the wait. Quality goes crazy.",
+            "author": "Unregistered Customer",
+            "location": "Chicago, IL",
+            "time": "14 days ago"
+          }
+        },
+        "review_4BzGr8": {
+          "type": "review",
+          "settings": {
+            "quote": "Real quality takes time. Got what I paid for and more.",
+            "author": "Mo Gohari",
+            "location": "Toronto, ON",
+            "time": "6 days ago"
+          }
+        },
+        "review_7nkFPr": {
+          "type": "review",
+          "settings": {
+            "quote": "Best purchase I've made this year. The quality is outstanding.",
+            "author": "Meo",
+            "location": "Milton, ON",
+            "time": "19 days ago"
+          }
+        }
+      },
+      "block_order": [
+        "review_VBxCcc",
+        "review_xBxfry",
+        "review_4BzGr8",
+        "review_7nkFPr"
+      ],
+      "name": "Reviews",
+      "settings": {
+        "heading": "Customer Reviews",
+        "subheading": "Based on 3,250 reviews"
+      }
     }
   },
   "order": [
     "hero",
     "shop",
-    "reviews",
-    "about"
+    "about",
+    "reviews_VhiXaM"
   ]
 }
