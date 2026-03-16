@@ -1,0 +1,27 @@
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-nav">
+      <a href="{{ routes.root_url }}/pages/contact">Contact Us</a>
+      <a href="{{ routes.root_url }}/policies/privacy-policy">Privacy Policy</a>
+      <a href="{{ routes.root_url }}/policies/refund-policy">Refund Policy</a>
+    </div>
+    <div class="country-select footer-country">
+      <button type="button" class="country-btn">United States <span>USD $</span></button>
+    </div>
+    <p class="copyright">© {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+    <div class="payment-methods">
+      {% for type in shop.enabled_payment_types %}
+        {{ type | payment_type_svg_tag: class: 'icon' }}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "tag": "footer",
+  "class": "section-footer",
+  "settings": []
+}
+{% endschema %}
