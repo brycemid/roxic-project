@@ -1,0 +1,87 @@
+/**
+ * ROXIC hero — upright turntable (Y axis).
+ * Use ONE of the setups below:
+ *
+ * A) Simple hero (roxic theme): wrapper .hero-spin around <img>
+ * B) Horizon hero: add class "roxic-spin-hero" to the section wrapper (schema "class")
+ *    — animation runs on .hero__media-wrapper so filter can stay on .hero__media / img.
+ */
+
+/* ----- A) Simple ROXIC hero ----- */
+.hero-figure {
+  perspective: 960px;
+  perspective-origin: 50% 45%;
+}
+
+.hero-figure .hero-spin {
+  display: inline-block;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: roxic-hero-turntable 8s linear infinite;
+}
+
+.hero-figure .hero-spin img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: contrast(0.92) brightness(1.12);
+  -webkit-filter: contrast(0.92) brightness(1.12);
+  backface-visibility: hidden;
+}
+
+/* ----- B) Horizon-style hero (section has class roxic-spin-hero) ----- */
+.roxic-spin-hero .hero__media-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roxic-spin-hero .hero__media-wrapper {
+  overflow: visible;
+  transform-style: preserve-3d;
+  perspective: 960px;
+  perspective-origin: 50% 45%;
+  transform-origin: 50% 50%;
+  width: clamp(160px, 26vw, 340px);
+  max-width: 100%;
+  margin-inline: auto;
+  animation: roxic-hero-turntable 10s linear infinite;
+  will-change: transform;
+}
+
+.roxic-spin-hero .hero__media,
+.roxic-spin-hero .hero__media img,
+.roxic-spin-hero picture.hero__media img {
+  animation: none !important;
+}
+
+.roxic-spin-hero .hero__media,
+.roxic-spin-hero picture.hero__media img {
+  object-fit: contain;
+  filter: contrast(0.92) brightness(1.12);
+  -webkit-filter: contrast(0.92) brightness(1.12);
+  backface-visibility: hidden;
+}
+
+.roxic-spin-hero .hero__overlay,
+.roxic-spin-hero .hero__blurred-image {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-figure .hero-spin,
+  .roxic-spin-hero .hero__media-wrapper {
+    animation: none;
+  }
+}
+
+@keyframes roxic-hero-turntable {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}

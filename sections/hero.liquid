@@ -1,13 +1,18 @@
 <section class="hero" id="home">
   <div class="hero-figure">
-    {% if section.settings.image != blank %}
-      <img src="{{ section.settings.image | image_url: width: 440 }}" alt="{{ section.settings.image.alt | default: 'ROXIC' }}" loading="lazy" class="hero-spin" />
-    {% else %}
-      {% comment %} Default: use theme asset so the spinning logo shows without picking in Customizer {% endcomment %}
-      <img src="{{ 'hero-figure.png' | asset_url }}" alt="ROXIC" loading="eager" width="220" height="220" class="hero-spin" />
-    {% endif %}
+    {% comment %} Wrapper spins on Y (turntable). Filter stays on the image so 3D is not flattened. {% endcomment %}
+    <div class="hero-spin">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 440 }}" alt="{{ section.settings.image.alt | default: 'ROXIC' }}" loading="lazy" width="220" height="220" />
+      {% else %}
+        <img src="{{ 'hero-figure.png' | asset_url }}" alt="ROXIC" loading="eager" width="220" height="220" />
+      {% endif %}
+    </div>
   </div>
   <p class="hero-tagline">{{ section.settings.tagline | default: 'ROXIC YOUR WAY' }}</p>
+  <p class="hero-actions">
+    <a href="{{ routes.root_url }}#shop" class="btn-primary">{{ section.settings.shop_all_label | default: 'Shop all' }}</a>
+  </p>
 </section>
 
 {% schema %}
@@ -26,6 +31,12 @@
       "id": "tagline",
       "label": "Tagline",
       "default": "ROXIC YOUR WAY"
+    },
+    {
+      "type": "text",
+      "id": "shop_all_label",
+      "label": "Shop all button label",
+      "default": "Shop all"
     }
   ]
 }
